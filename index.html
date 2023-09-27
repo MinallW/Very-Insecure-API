@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+  </head>
+  <body>
+      <h1>Save your files here</h1>
+      <p>Not controlled, so quite insecure!</p>
+      <form action="/action" method="post" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="file" name="profilePicture" />
+          <input type="submit" value="Submit" />
+      </form>
+      <h1>Run a command</h1>
+        <p>Why has someone implemented this?, very insecure</p>
+        <form action="/command" method="post">
+          <input type="text" name="command" placeholder="Enter a command" />
+          <input type="submit" value="Submit" />
+        </form>
+  </body>
+</html>
